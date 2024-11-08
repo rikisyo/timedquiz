@@ -273,6 +273,13 @@ function qgen() <!--{{{-->
     result = x1 * x2
     qstr = x1.toString() +" &times; "+ x2.toString() +" = ?";
   }
+  else if (q_type==8)
+  {
+    x2 = Math.floor(Math.random()*(upper1-lower1+1)+lower1);
+    result = Math.floor(Math.random()*(upper2-lower2+1)+lower2);
+    x1 = x2 * result
+    qstr = x1.toString() +" &divide; "+ x2.toString() +" = ?";
+  }
   else
   {
     x1 = Math.floor(Math.random()*(upper1-lower1+1)+lower1);
